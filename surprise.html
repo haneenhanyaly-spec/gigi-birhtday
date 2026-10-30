@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مفاجأة لجوجي ♡</title>
+
+    <style>
+
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            background: linear-gradient(135deg, #fff1e8, #f4dce4);
+
+            font-family: Tahoma, sans-serif;
+
+            text-align: center;
+
+            padding: 50px 20px;
+
+        }
+
+        /* Birthday Message */
+
+        .message {
+
+            background: #fffaf5;
+
+            padding: 45px 30px;
+
+            border-radius: 25px;
+
+            max-width: 650px;
+
+            margin: 20px auto 60px;
+
+            box-shadow: 0 10px 40px rgba(80,40,50,0.15);
+
+        }
+
+        h1 {
+
+            color: #813c55;
+
+            font-size: 32px;
+
+        }
+
+        p {
+
+            color: #795b61;
+
+            font-size: 18px;
+
+            line-height: 2;
+
+        }
+
+        /* Photo Gallery */
+
+        .gallery {
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            padding: 20px;
+
+        }
+
+        .gallery h2,
+
+        .video-section h2 {
+
+            color: #813c55;
+
+            font-size: 30px;
+
+            margin-bottom: 25px;
+
+        }
+
+        .photos {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+            gap: 22px;
+
+        }
+
+        .photos img {
+
+            width: 100%;
+
+            height: 280px;
+
+            object-fit: cover;
+
+            border-radius: 20px;
+
+            box-shadow: 0 8px 20px rgba(80,40,50,0.15);
+
+            cursor: pointer;
+
+            transition: transform 0.4s, box-shadow 0.4s;
+
+        }
+
+        .photos img:hover {
+
+            transform: translateY(-8px) scale(1.02);
+
+            box-shadow: 0 15px 30px rgba(80,40,50,0.22);
+
+        }
+
+        .gallery-text {
+
+            color: #795b61;
+
+            font-size: 17px;
+
+            margin-bottom: 30px;
+
+        }
+
+        /* Video Section */
+
+        .video-section {
+
+            max-width: 750px;
+
+            margin: 70px auto 40px;
+
+            padding: 35px 25px;
+
+            background: #fffaf5;
+
+            border-radius: 25px;
+
+            box-shadow: 0 10px 40px rgba(80,40,50,0.15);
+
+        }
+
+        .video-section p {
+
+            margin-bottom: 25px;
+
+        }
+
+        .video-section video {
+
+            width: 100%;
+
+            max-height: 650px;
+
+            border-radius: 18px;
+
+            background: #ead9df;
+
+            display: block;
+
+            margin: auto;
+
+            object-fit: contain;
+
+        }
+
+        /* Lightbox */
+
+        .lightbox {
+
+            display: none;
+
+            position: fixed;
+
+            inset: 0;
+
+            background: rgba(35, 15, 25, 0.9);
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 20px;
+
+            z-index: 1000;
+
+        }
+
+        .lightbox img {
+
+            max-width: 90%;
+
+            max-height: 85vh;
+
+            border-radius: 15px;
+
+            object-fit: contain;
+
+        }
+
+        .close {
+
+            position: absolute;
+
+            top: 20px;
+
+            left: 25px;
+
+            color: white;
+
+            font-size: 35px;
+
+            cursor: pointer;
+
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            body {
+
+                padding: 25px 12px;
+
+            }
+
+            .message {
+
+                padding: 30px 20px;
+
+                margin-bottom: 35px;
+
+            }
+
+            h1 {
+
+                font-size: 25px;
+
+            }
+
+            .gallery h2,
+
+            .video-section h2 {
+
+                font-size: 25px;
+
+            }
+
+            .photos {
+
+                grid-template-columns: repeat(2, 1fr);
+
+                gap: 12px;
+
+            }
+
+            .photos img {
+
+                height: 210px;
+
+            }
+
+            .video-section {
+
+                padding: 25px 15px;
+
+                margin-top: 45px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Birthday Message -->
+
+    <div class="message">
+
+        <h1>إلى جيجي الجميلة ♡</h1>
+
+        <p>
+
+            النهارده يوم مميز جدًا،
+
+            لأنه يوم ميلاد شخص مميز زيك!
+
+            <br>
+
+            أتمنالك كل السعادة والفرحة
+
+            وكل الحاجات الحلوة اللي نفسك فيها.
+
+        </p>
+
+        <p>
+
+            ولسه المفاجآت مخلصتش... ❤️
+
+        </p>
+
+    </div>
+
+    <!-- Photo Gallery -->
+
+    <div class="gallery">
+
+        <h2>أحلى ذكرياتنا سوا ♡</h2>
+
+        <p class="gallery-text">
+
+            كل صورة وراها حكاية وذكرى حلوة ❤️
+
+        </p>
+
+        <div class="photos">
+
+            <img src="images/photo1.jpeg" alt="ذكرياتنا">
+
+            <img src="images/photo2.jpeg" alt="ذكرياتنا">
+
+            <img src="images/photo3.jpeg" alt="ذكرياتنا">
+
+            <img src="images/photo4.jpeg" alt="ذكرياتنا">
+
+            <img src="images/photo5.jpeg" alt="ذكرياتنا">
+
+        </div>
+
+    </div>
+
+    <!-- Video -->
+
+    <section class="video-section">
+
+        <h2>A Little Book of Us ♡</h2>
+
+        <p>Some memories deserve to stay forever ❤️</p>
+
+        <video controls playsinline preload="metadata">
+
+            <source src="video/gigi-birthday.mp4" type="video/mp4">
+
+            متصفحك لا يستطيع تشغيل الفيديو.
+
+        </video>
+
+    </section>
+
+    <!-- Image Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+
+        <span class="close" id="close">&times;</span>
+
+        <img id="bigImage" src="" alt="صورة مكبرة">
+
+    </div>
+
+    <!-- JavaScript -->
+
+    <script>
+
+        const photos = document.querySelectorAll(".photos img");
+
+        const lightbox = document.getElementById("lightbox");
+
+        const bigImage = document.getElementById("bigImage");
+
+        const close = document.getElementById("close");
+
+        photos.forEach(photo => {
+
+            photo.addEventListener("click", function() {
+
+                bigImage.src = this.src;
+
+                lightbox.style.display = "flex";
+
+            });
+
+        });
+
+        close.addEventListener("click", function() {
+
+            lightbox.style.display = "none";
+
+        });
+
+        lightbox.addEventListener("click", function(event) {
+
+            if (event.target === lightbox) {
+
+                lightbox.style.display = "none";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

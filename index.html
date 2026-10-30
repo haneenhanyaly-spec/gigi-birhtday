@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGI'S Birthday</title>
+    <style>
+
+    * {
+
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+
+    }
+
+    body {
+
+        min-height: 100vh;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        background: linear-gradient(135deg, #fff1e8, #f4dce4);
+
+        font-family: Georgia, serif;
+
+    }
+
+    .container {
+
+        text-align: center;
+
+        background: #fffaf5;
+
+        padding: 60px 45px;
+
+        border-radius: 25px;
+
+        box-shadow: 0 10px 40px rgba(80, 40, 50, 0.15);
+
+        max-width: 90%;
+
+        animation: appear 1.5s ease;
+
+    }
+
+    h1 {
+
+        color: #813c55;
+
+        font-size: 42px;
+
+        margin-bottom: 20px;
+
+    }
+
+    p {
+
+        color: #795b61;
+
+        font-size: 18px;
+
+        margin-bottom: 30px;
+
+    }
+
+    button {
+
+        background: #813c55;
+
+        color: white;
+
+        border: none;
+
+        padding: 15px 30px;
+
+        border-radius: 30px;
+
+        font-size: 16px;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+
+    }
+
+    button:hover {
+
+        background: #a75b75;
+
+        transform: scale(1.08);
+
+    }
+
+    @keyframes appear {
+
+        from {
+
+            opacity: 0;
+
+            transform: translateY(30px);
+
+        }
+
+        to {
+
+            opacity: 1;
+
+            transform: translateY(0);
+
+        }
+
+    }
+
+</style>
+</head>
+<body>
+   <div class="container">
+
+    <h1>كل سنة وإنتِ طيبة يا جيجي! ♡</h1>
+
+    <p>عملتلك مفاجأة صغيرة مخصوص علشانك...</p>
+
+    <button onclick="window.location.href='surprise.html'">
+
+        افتحي مفاجأتك ❤️
+
+    </button>
+
+</div>
+</body>
+</html>
